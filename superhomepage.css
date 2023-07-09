@@ -1,0 +1,232 @@
+nav{
+  background: #075607;
+  height: 80px;
+  width: 100%;
+}
+nav ul{
+  text-align: center;
+  margin-right: 10px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 13px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 20px;
+  padding: 7px 30px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+ 
+@media (max-width: 700px){
+  nav ul li a{
+    z-index: 1;
+    position: relative;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px){
+  nav ul li a{
+    font-size: 14px;
+    padding: 7px 3px;
+  }
+}
+@media (min-width: 801px) and (max-width: 900px){
+  nav ul li a{
+    font-size: 16px;
+    padding: 7px 6px;
+
+  }
+}
+@media (min-width: 901px) and (max-width: 1023px){
+  nav ul li a{
+    font-size: 18px;
+    padding: 7px 4px;
+
+  }
+}
+@media (min-width: 1024px) and (max-width: 1160px){
+  nav ul li a{
+    font-size: 18px;
+    padding: 7px 3px;
+
+  }
+}
+
+@media (max-width: 348px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    background: #A2CDB0;
+    top: 80px;
+    left: -100%;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    text-align: left;
+    margin-top: 50px;
+    line-height: 10px;
+  
+  }
+  nav ul li a{
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+ 
+}
+
+@media (min-width: 349px) and (max-width: 700px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 60%;
+    height: 100vh;
+    background: #A2CDB0;
+    top: 80px;
+    left: -100%;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    text-align: left;
+    margin-top: 50px;
+    line-height: 10px;
+  
+  }
+  nav ul li a{
+    font-size: 16px;
+    padding-left: 5px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+.container{
+  margin-bottom: 70px;
+}
+.heading{
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+
+.card{
+  margin-top: 20px;
+}
+.superimg{
+  max-width: 90px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+.card-header{
+  text-align: center;
+}
+.card-body{
+  background-color: #075607;
+}
+.button{
+ background-color: #075607;
+ border-style: none;
+ color: white;
+ font-size: 16px;
+ font-family: 'Times New Roman', Times, serif;
+ font-weight: bold;
+ cursor: pointer;
+}
+.buttons{
+  background-color: #075607;
+  border-style: none;
+  color: white;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+
+
+
+@media (max-width: 575px){
+  .superimg{
+    max-width: 50px;
+  }
+  
+  .buttons{
+    background-color: #075607;
+    border-style: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+  .superimg{
+    max-width: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+  }
+  .heading{
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .button{
+    font-size: 10px;
+  }
+
+  .buttons{
+    background-color: #075607;
+    border-style: none;
+    color: white;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}
+
+
+
